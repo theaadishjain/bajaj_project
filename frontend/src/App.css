@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: #111111;
+  color: #e8e0d0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1, h3, h4 {
+  color: #e8e0d0;
+}
+
+p {
+  color: #9a9080;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  font-family: monospace;
+  background-color: #f5f0e8;
+  color: #1a1a1a;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+textarea:focus {
+  border: 1px solid #888;
+}
+
+button {
+  background-color: #1a1a1a;
+  color: #e8e0d0;
+  border: 1px solid #e8e0d0;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e8e0d0;
+  color: #1a1a1a;
+}
+
+button:disabled {
+  background-color: #333;
+  color: #666;
+  border-color: #444;
+  cursor: not-allowed;
+}
+
+.error-msg {
+  color: #c0392b;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #1a1a1a;
+  border-radius: 4px;
+}
+
+.summary-card {
+  background-color: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.summary-card p {
+  color: #e8e0d0;
+}
+
+.hierarchies-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hierarchy-card {
+  border: 1px solid #2a2a2a;
+  border-left: 5px solid #6b6b4a; /* muted olive accent */
+  padding: 15px;
+  border-radius: 6px;
+  background-color: #1a1a1a;
+  color: #e8e0d0;
+}
+
+.hierarchy-card.cyclic {
+  border-color: #8b3a2a; /* dark red/burnt border */
+  border-left-width: 1px; /* remove the olive accent for cyclic */
+}
+
+.hierarchy-card h4 {
+  margin-top: 0;
+}
+
+.hierarchy-card p {
+  color: #9a9080;
+}
+
+.lists-section {
+  margin-top: 20px;
+}
+
+.lists-section h4 {
+  color: #e8e0d0;
+}
+
+.lists-section ul {
+  padding-left: 20px;
+  color: #9a9080;
+}
+
+ul.tree-list {
+  padding-left: 20px;
+  list-style-type: disc;
+  color: #9a9080;
+}
+
+.tree-list li {
+  margin-top: 4px;
+  color: #e8e0d0;
+}
